@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e.absway111567.e_voting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="create election"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".votingp" />
+        <activity
+            android:name=".scroll"
+            android:label="@string/title_activity_scroll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".date" />
+        <activity android:name=".addvoters" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".addprograms" />
+        <activity android:name=".balpro" />
+        <activity android:name=".connect" />
+        <activity android:name=".end"></activity>
+    </application>
+
+</manifest>
